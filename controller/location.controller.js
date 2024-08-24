@@ -1,6 +1,16 @@
 import LocationModel from "../model/location.model.js";
 import { exec } from "child_process";
 
+
+const startServer = (req, res) => {
+    try {
+        res.send({ message: "Server is running" });
+    } catch (error) {
+        console.error(error);
+        res.status(500).send({ message: "An error occurred on the server" });
+    }
+}
+
 const latitudeAndLongitude = () => {
     return new Promise((resolve, reject) => {
         exec('curl -s ipinfo.io', (error, stdout, stderr) => {
@@ -89,4 +99,4 @@ const addBulkData = async (req, res) => {
 
 
 
-export { getLocation, addSchool, addBulkData }
+export { getLocation, addSchool, addBulkData, startServer }
