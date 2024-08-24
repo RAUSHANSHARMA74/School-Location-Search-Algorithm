@@ -39,7 +39,6 @@
         DB_USER = root # or your database username
         DB_PASSWORD = replace with your MySQL password
         DB_NAME = replace with your actual database name
-        PORT = 3050 # the port your application will run on
       ```
 
 4.  Running the Backend:
