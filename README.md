@@ -33,11 +33,13 @@
     - Create a `.env` file in the `backend` directory and add the following environment variables:
 
       ```env
-      DB_HOST = localhost # or the hostname of your database server
-      DB_USER = root # or your database username
-      DB_PASSWORD = replace with your MySQL password
-      DB_NAME = replace with your actual database name
-      PORT = 3050 # the port your application will run on
+
+        SERVER_PORT = 6050
+        DB_HOST = localhost # or the hostname of your database server
+        DB_USER = root # or your database username
+        DB_PASSWORD = replace with your MySQL password
+        DB_NAME = replace with your actual database name
+        PORT = 3050 # the port your application will run on
       ```
 
 4.  Running the Backend:
@@ -48,7 +50,7 @@
       npm start
       ```
 
-    - The backend server will run on `http://localhost:3050` or the port specified in your `.env` file.
+    - The backend server will run on `http://localhost:6050` or the port specified in your `.env` file.
 
 ## Additional Notes
 
